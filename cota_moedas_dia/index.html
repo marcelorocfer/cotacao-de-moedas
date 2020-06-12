@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"> 
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Ubuntu', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <select name="coins" id="coins">
+        <option value="0">Escolha a moeda</option>
+        <option value="USD">Dólar Comercial</option>
+        <option value="USDT">Dólar Turismo</option>
+        <option value="CAD">Dólar Canadense</option>
+        <option value="EUR">Euro</option>
+        <option value="GBP">Libra Esterlina</option>
+        <option value="ARS">Peso Argentino</option>
+        <option value="BTC">Bitcoin</option>
+        <option value="LTC">Litecoin</option>
+        <option value="JPY">Iene Japonês</option>
+        <option value="CHF">Franco Suíço</option>
+        <option value="AUD">Dólar Australiano</option>
+        <option value="CNY">Yuan Chinês</option>
+        <option value="ILS">Novo Shekel Israelense</option>
+        <option value="ETH">Ethereum</option>
+        <option value="XRP">Ripple</option>
+    </select>
+    
+    <button onclick="consulta()">Consultar</button>
+    <div id="divBox">
+        <div id="resultB"></div>
+        <div id="resultA"></div>
+        <div id="resultVarBid"></div>
+        <div id="resultPctChange"></div>
+        <div id="resultHigh"></div>
+        <div id="resultLow"></div>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

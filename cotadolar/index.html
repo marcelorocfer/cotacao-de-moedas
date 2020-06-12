@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"> 
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Ubuntu', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="elementInput">
+        <input type="date" id="cotacao" name="cotacao">
+        <button onclick="cotacao()">Fazer Cotação</button> 
+    </div>
+    <div id="elementResult">
+        <span id="resultLoadImg"></span>       
+        <div id="result"></div>
+        <div id="resultError"></div>
+        <div id="resultNetworkError"></div>
+        <div id="resultNoSelectedDate"></div>
+    </div>
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./moment-develop/moment.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
